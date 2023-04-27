@@ -17,7 +17,7 @@ def get_city():
 def get_month():
     # get user input for month (all, january, february, ... , june)
     while True:
-        month = input("Enter  month (all, january, february, march, april, may, june): ").lower()
+        month = input("Enter month (all, january, february, march, april, may, june): ").lower()
         if month in ['all', 'january', 'february', 'march', 'april', 'may', 'june']:
             return month
         print('Invalid month, please enter a valid month.')
