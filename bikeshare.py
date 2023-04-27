@@ -19,24 +19,24 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = ''
     while city not in ['chicago', 'new york city', 'washington']:
-        city = input("Fill city name (chicago, new york city, washington): ").lower()
+        city = input("Enter city name (chicago, new york city, washington): ").lower()
         if city not in ['chicago', 'new york city', 'washington']:
-            print('Invalid city name, please fill a valid city name')
+            print('Invalid city name, please enter a valid city name')
 
 
     # get user input for month (all, january, february, ... , june)
     month = ''
     while month not in ['all', 'january', 'february', 'march', 'april', 'may', 'june']:
-        month = input("Fill month (all, january, february, march, april, may, june): ").lower()
+        month = input("Enter month (all, january, february, march, april, may, june): ").lower()
         if month not in ['all', 'january', 'february', 'march', 'april', 'may', 'june']:
-            print('Invalid month, please fill a valid month')
+            print('Invalid month, please enter a valid month')
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     day = ''
     while day not in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
-        day = input("Fill day (all, monday, tuesday, wednesday, thursday, friday, saturday, sunday): ").lower()
+        day = input("Enter day (all, monday, tuesday, wednesday, thursday, friday, saturday, sunday): ").lower()
         if day not in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
-            print('Invalid day, please fill a valid day')
+            print('Invalid day, please enter a valid day')
 
     print('-'*40)
     return city, month, day
