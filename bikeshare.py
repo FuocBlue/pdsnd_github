@@ -25,7 +25,7 @@ def get_month():
 def get_day():
     # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-        day = input("Enter day (all, monday, tuesday, wednesday, thursday, friday, saturday, sunday): ").lower()
+        day = input("Enter  day (all, monday, tuesday, wednesday, thursday, friday, saturday, sunday): ").lower()
         if day in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
             return day
         print('Invalid day, please enter a valid day.')
